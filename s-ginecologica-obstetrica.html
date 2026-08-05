@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMIOLOGIA GINECOLÓGICA E OBSTÉTRICA - Calculadora de Notas</title>
+    <link rel="stylesheet" href="css/style-med65.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="img/calculadora-de-notas-med65.png" alt="Logo do Site" id="logo-principal">
+        </div>
+    </header>
+
+    <main class="container">
+        <br>
+        <a href="calculadora-hub-6periodo.html" class="voltar">
+            <img src="img/voltar-para-a-pagina-inicial-med65.png" alt="Logo do Site" id="logo-voltar">
+        </a>
+        <br><br><br>
+
+        <div class="calculadora">
+            <h2 class="texto-sombra">SEMIOLOGIA GINECOLÓGICA E OBSTÉTRICA</h2>
+
+            <form id="calculadora-form">
+                
+                <!-- SEÇÃO P1 -->
+                <div class="grade-input-section">
+                    <div class="grade-input-group main-grade p1-toggle-header" data-target-details="p1ComponentsDetailsSGO">
+                        <label for="p1-completa">P1 (10 pontos): </label> <h6>-------- peso 4,5 ---------</h6>
+                        <input type="number" id="p1-completa" min="0" max="10" step="0.01" placeholder="Digite a nota da P1">
+                        <span class="p1-components-label-action toggle-trigger" style="cursor: pointer;">CALCULAR P1 POR COMPONENTES</span>
+                        <button type="button" class="expand-arrow-button toggle-trigger" style="cursor: pointer;">
+                            <span class="arrow-icon">▼</span>
+                        </button>
+                    </div>
+                    <div class="p1-components-details" id="p1ComponentsDetailsSGO" style="display: none;">
+                        <div class="form-group">
+                            <label for="p1-escrita1">
+                                <span>Avaliação Escrita I</span>
+                                <span class="points-label">(6,0 pontos)</span>
+                            </label>
+                            <input type="number" id="p1-escrita1" min="0" max="6" step="0.01" placeholder="Nota Avaliação Escrita I">
+                        </div>
+                        <div class="form-group">
+                            <label for="p1-pratica">
+                                <span>50% da Avaliação Prática</span>
+                                <span class="points-label">(4,0 pontos)</span>
+                            </label>
+                            <input type="number" id="p1-pratica" min="0" max="4" step="0.01" placeholder="Nota 50% Prática">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEÇÃO P2 -->
+                <div class="grade-input-section">
+                    <div class="grade-input-group main-grade p2-toggle-header" data-target-details="p2ComponentsDetailsSGO">
+                        <label for="p2-completa">P2 (10 pontos): </label>  <h6>-------- peso 4,5 ---------</h6>
+                        <input type="number" id="p2-completa" min="0" max="10" step="0.01" placeholder="Digite a nota da P2">
+                        <span class="p2-components-label-action toggle-trigger" style="cursor: pointer;">CALCULAR P2 POR COMPONENTES</span>
+                        <button type="button" class="expand-arrow-button toggle-trigger" style="cursor: pointer;">
+                            <span class="arrow-icon">▼</span>
+                        </button>
+                    </div>
+                    <div class="p2-components-details" id="p2ComponentsDetailsSGO" style="display: none;">
+                        <div class="form-group">
+                            <label for="p2-escrita2">
+                                <span>Avaliação Escrita II</span>
+                                <span class="points-label">(4,0 pontos)</span>
+                            </label>
+                            <input type="number" id="p2-escrita2" min="0" max="4" step="0.01" placeholder="Nota Avaliação Escrita II">
+                        </div>
+                        <div class="form-group">
+                            <label for="p2-pratica">
+                                <span>50% da Avaliação Prática</span>
+                                <span class="points-label">(4,0 pontos)</span>
+                            </label>
+                            <input type="number" id="p2-pratica" min="0" max="4" step="0.01" placeholder="Nota 50% Prática">
+                        </div>
+                        <div class="form-group">
+                            <label for="p2-seminario">
+                                <span>Apresentação de Seminário</span>
+                                <span class="points-label">(2,0 pontos)</span>
+                            </label>
+                            <input type="number" id="p2-seminario" min="0" max="2" step="0.01" placeholder="Nota Seminário">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEÇÃO P3 (PROMED/SAI) -->
+                <div class="grade-input-section">
+                    <div class="grade-input-group main-grade p3-toggle-header" data-target-details="p3ComponentsDetailsSGO">
+                        <label for="p3-completa">P3 PROMED/SAI (10 pontos):</label> <h6>-------- peso 1,0 ---------</h6>
+                        <input type="number" id="p3-completa" min="0" max="10" step="0.01" placeholder="Digite a Média da P3">
+                        <span class="p3-components-label-action toggle-trigger" style="cursor: pointer;">CALCULAR P3 POR COMPONENTES</span>
+                        <button type="button" class="expand-arrow-button toggle-trigger" style="cursor: pointer;">
+                            <span class="arrow-icon">▼</span>
+                        </button>
+                    </div>
+                    <div class="p3-components-details" id="p3ComponentsDetailsSGO" style="display: none;">
+                        <div class="form-group">
+                            <label for="p3-promed">
+                                <span>PROMED</span>
+                                <span class="points-label">(10 pontos)</span>
+                            </label>
+                            <input type="number" id="p3-promed" min="0" max="10" step="0.01" placeholder="Nota PROMED">
+                        </div>
+                        <div class="form-group">
+                            <label for="p3-sai">
+                                <span>SAI</span>
+                                <span class="points-label">(10 pontos)</span>
+                            </label>
+                            <input type="number" id="p3-sai" min="0" max="10" step="0.01" placeholder="Nota SAI">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" id="calcular" class="btn-calcular">Calcular</button>
+                    <button type="button" id="limpar" class="btn-limpar">Limpar</button>
+                </div>
+            </form>
+
+            <div id="resultado" class="resultado" style="display: none;">
+                <h3 class="texto-falta-sombra">RESULTADO:</h3><br>
+                <div id="media-final" style="display: none;" class="media-final-wrapper">
+                    <br><p>Sua média final é: <strong id="nota-final">0.00</strong></p>
+                    <p id="mensagem"></p>
+                    <p id="detalhamento-notas" style="font-size: 0.85em; color: #666; margin-top: 8px; border-top: 1px solid #eee; padding-top: 5px;"></p>
+                </div>
+                <div id="notas-necessarias"></div>
+            </div>
+        </div>
+        <br><br><br><br>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Autoria de Gabriel Papa</p>
+        </div>
+    </footer>
+
+    <script src="js/script-med65.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const calcularBtn = document.getElementById('calcular');
+            const limparBtn = document.getElementById('limpar');
+            
+            if (calcularBtn) calcularBtn.addEventListener('click', calcularNota);
+            if (limparBtn) limparBtn.addEventListener('click', () => {
+                const form = document.getElementById('calculadora-form');
+                if (form) form.reset();
+                const res = document.getElementById('resultado');
+                if (res) res.style.display = 'none';
+            });
+            
+            // Lógica de Expandir/Recolher
+            const triggers = document.querySelectorAll('.expand-arrow-button, .toggle-trigger');
+            triggers.forEach(el => {
+                el.onclick = function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const header = this.closest('.grade-input-group');
+                    const targetId = header.getAttribute('data-target-details');
+                    const details = document.getElementById(targetId);
+                    const arrow = header.querySelector('.arrow-icon');
+                    
+                    if (details.style.display === 'none') {
+                        details.style.display = 'block';
+                        if(arrow) arrow.textContent = '▲';
+                        header.classList.add('expanded');
+                    } else {
+                        details.style.display = 'none';
+                        if(arrow) arrow.textContent = '▼';
+                        header.classList.remove('expanded');
+                    }
+                };
+            });
+        });
+
+        function formatarNotaLocal(val) { return parseFloat(val).toFixed(2); }
+
+        function getNota(id) {
+            const el = document.getElementById(id);
+            if (!el) return null;
+            const val = el.value;
+            return val !== '' ? parseFloat(val) : null;
+        }
+
+        function calculateMissingForPx(target, components) {
+            let html = '';
+            let currentSum = 0;
+            const missing = components.filter(c => c.v === null);
+            components.filter(c => c.v !== null).forEach(c => currentSum += c.v);
+
+            if (missing.length === 0) return '';
+
+            const neededSum = target - currentSum;
+            const maxMissingSum = missing.reduce((sum, c) => sum + c.m, 0);
+
+            if (neededSum > maxMissingSum + 0.01) {
+                return false; // Impossível
+            }
+
+            missing.forEach(comp => {
+                const proportion = maxMissingSum > 0 ? comp.m / maxMissingSum : 0;
+                const neededScore = neededSum * proportion;
+                const fmt = (typeof formatarNota === 'function') ? formatarNota : formatarNotaLocal;
+                const scoreToShow = Math.max(0, Math.min(comp.m, neededScore));
+                html += `<li style="list-style-type: '→ '; padding-left: 10px; margin-left: 23px;">${comp.n}: <strong>${fmt(scoreToShow)}</strong> (de ${comp.m.toFixed(1)})</li>`;
+            });
+            return html;
+        }
+
+        function calculateMissingForP3(targetP3, promed, sai) {
+            let html = '';
+            const fmt = (typeof formatarNota === 'function') ? formatarNota : formatarNotaLocal;
+            
+            if (promed === null && sai === null) {
+                html += `<li style="list-style-type: '→ '; padding-left: 10px; margin-left: 23px;">PROMED: <strong>${fmt(targetP3)}</strong> (de 10.0)</li>`;
+                html += `<li style="list-style-type: '→ '; padding-left: 10px; margin-left: 23px;">SAI: <strong>${fmt(targetP3)}</strong> (de 10.0)</li>`;
+            } else if (promed !== null) {
+                let neededSai = (targetP3 * 2) - promed;
+                if (neededSai > 10.01) return false;
+                let displaySai = Math.max(0, neededSai);
+                html += `<li style="list-style-type: '→ '; padding-left: 10px; margin-left: 23px;">SAI: <strong>${fmt(displaySai)}</strong> (de 10.0)</li>`;
+            } else if (sai !== null) {
+                let neededPromed = (targetP3 * 2) - sai;
+                if (neededPromed > 10.01) return false;
+                let displayPromed = Math.max(0, neededPromed);
+                html += `<li style="list-style-type: '→ '; padding-left: 10px; margin-left: 23px;">PROMED: <strong>${fmt(displayPromed)}</strong> (de 10.0)</li>`;
+            }
+            return html;
+        }
+
+        function calcularNota() {
+            // --- Coleta P1 ---
+            let p1_final = getNota('p1-completa');
+            const p1Escrita1 = getNota('p1-escrita1');
+            const p1Pratica = getNota('p1-pratica');
+            
+            const p1_components_full = (p1Escrita1 !== null && p1Pratica !== null);
+            
+            let p1 = null;
+            if (p1_final !== null) { p1 = p1_final; } 
+            else if (p1_components_full) { p1 = p1Escrita1 + p1Pratica; }
+
+            // --- Coleta P2 ---
+            let p2_final = getNota('p2-completa');
+            const p2Escrita2 = getNota('p2-escrita2');
+            const p2Pratica = getNota('p2-pratica');
+            const p2Seminario = getNota('p2-seminario');
+            
+            const p2_components_full = (p2Escrita2 !== null && p2Pratica !== null && p2Seminario !== null);
+
+            let p2 = null;
+            if (p2_final !== null) { p2 = p2_final; } 
+            else if (p2_components_full) { p2 = p2Escrita2 + p2Pratica + p2Seminario; }
+
+            // --- Coleta P3 (PROMED/SAI) ---
+            let p3_final = getNota('p3-completa');
+            const p3Promed = getNota('p3-promed');
+            const p3Sai = getNota('p3-sai');
+
+            const p3_components_full = (p3Promed !== null && p3Sai !== null);
+
+            let p3 = null;
+            if (p3_final !== null) { p3 = p3_final; }
+            else if (p3_components_full) { p3 = (p3Promed + p3Sai) / 2; }
+
+            // --- Elementos DOM ---
+            const resultadoDiv = document.getElementById('resultado');
+            const mediaFinalDiv = document.getElementById('media-final');
+            const notasNecessariasDiv = document.getElementById('notas-necessarias');
+            const notaFinalEl = document.getElementById('nota-final');
+            const mensagemEl = document.getElementById('mensagem');
+            const detalhamentoEl = document.getElementById('detalhamento-notas');
+
+            // --- Limpeza ---
+            mediaFinalDiv.style.display = 'none';
+            notasNecessariasDiv.innerHTML = '';
+            mediaFinalDiv.classList.remove('aprovado', 'recuperacao', 'reprovado');
+            mensagemEl.className = '';
+            const linkPfWrapper = mediaFinalDiv.querySelector('.link-pf-wrapper');
+            if (linkPfWrapper) linkPfWrapper.remove();
+            
+            const PASSING_GRADE = 7.0;
+            const fmt = (typeof formatarNota === 'function') ? formatarNota : formatarNotaLocal;
+            const msgFunc = (typeof obterMensagem === 'function') ? obterMensagem : (n) => (n>=7?"Aprovado":"Reprovado");
+
+            const gerarDetalhamento = (vP1, vP2, vP3) => {
+                const tP1 = (vP1 !== null) ? fmt(vP1) : "--";
+                const tP2 = (vP2 !== null) ? fmt(vP2) : "--";
+                const tP3 = (vP3 !== null) ? fmt(vP3) : "--";
+                return `média P1: ${tP1} &nbsp;&nbsp; média P2: ${tP2} &nbsp;&nbsp; média P3: ${tP3}`;
+            };
+
+            // --- LÓGICA DE DECISÃO ---
+
+            // CASO 1: Tudo preenchido
+            if (p1 !== null && p2 !== null && p3 !== null) {
+                notasNecessariasDiv.style.display = 'none';
+                mediaFinalDiv.style.display = 'block';
+
+                const mediaFinalValor = ((p1 * 4.5) + (p2 * 4.5) + (p3 * 1.0)) / 10;
+                notaFinalEl.textContent = fmt(mediaFinalValor);
+                mensagemEl.textContent = msgFunc(mediaFinalValor);
+
+                if (mediaFinalValor >= PASSING_GRADE) {
+                    mediaFinalDiv.classList.add('aprovado');
+                    mensagemEl.classList.add('aprovado-msg');
+                } else if (mediaFinalValor >= 3) {
+                    mediaFinalDiv.classList.add('recuperacao');
+                    mensagemEl.classList.add('recuperacao-msg');
+                    const linkPf = document.createElement('p');
+                    linkPf.className = 'link-pf-wrapper';
+                    linkPf.innerHTML = `<a href="prova-final-med65.html" class="btn-calcular" style="display: inline-block; margin-top: 10px; text-decoration: none; text-align: center;">Cálculo da Prova Final</a>`;
+                    mediaFinalDiv.appendChild(linkPf);
+                } else {
+                    mediaFinalDiv.classList.add('reprovado');
+                    mensagemEl.classList.add('reprovado-msg');
+                }
+                detalhamentoEl.innerHTML = gerarDetalhamento(p1, p2, p3);
+            } 
+            // CASO 2: Alguma nota incompleta
+            else {
+                mediaFinalDiv.style.display = 'none';
+                notasNecessariasDiv.style.display = 'block';
+                
+                const safeSum = (...args) => args.reduce((a, b) => a + (b || 0), 0);
+                
+                const sumP1Components = safeSum(p1Escrita1, p1Pratica);
+                const sumP2Components = safeSum(p2Escrita2, p2Pratica, p2Seminario);
+                const sumP3Components = ((p3Promed || 0) + (p3Sai || 0)) / 2;
+                
+                const currP1 = (p1 !== null) ? p1 : sumP1Components;
+                const currP2 = (p2 !== null) ? p2 : sumP2Components;
+                const currP3 = (p3 !== null) ? p3 : sumP3Components;
+                
+                const somaAtual = (currP1 * 4.5) + (currP2 * 4.5) + (currP3 * 1.0); // Média Atual Ponderada x 10
+
+                let maxMissingP1 = 0;
+                if (p1 === null) {
+                    if (p1Escrita1 === null) maxMissingP1 += 6.0;
+                    if (p1Pratica === null) maxMissingP1 += 4.0;
+                }
+                const potP1 = (p1_final !== null) ? p1_final : (sumP1Components + maxMissingP1);
+
+                let maxMissingP2 = 0;
+                if (p2 === null) {
+                    if (p2Escrita2 === null) maxMissingP2 += 4.0;
+                    if (p2Pratica === null) maxMissingP2 += 4.0;
+                    if (p2Seminario === null) maxMissingP2 += 2.0;
+                }
+                const potP2 = (p2_final !== null) ? p2_final : (sumP2Components + maxMissingP2);
+
+                let maxMissingP3 = 0;
+                if (p3 === null) {
+                    if (p3Promed === null) maxMissingP3 += 5.0; // Contribui 5 para a média 10
+                    if (p3Sai === null) maxMissingP3 += 5.0;    // Contribui 5 para a média 10
+                }
+                const potP3 = (p3_final !== null) ? p3_final : (sumP3Components + maxMissingP3);
+
+                const mediaPotencial = ((potP1 * 4.5) + (potP2 * 4.5) + (potP3 * 1.0)) / 10;
+
+                // 2a. Já Passou?
+                if (somaAtual / 10 >= PASSING_GRADE) {
+                    notasNecessariasDiv.innerHTML = '<br><p class="aprovado-msg" style="font-weight: bold;">Parabéns, você já passou! Suas notas atuais já garantem a média.</p>';
+                    notasNecessariasDiv.innerHTML += `<p id="detalhamento-notas" style="font-size: 0.85em; color: #666; margin-top: 8px; border-top: 1px solid #eee; padding-top: 5px;">${gerarDetalhamento(p1, p2, p3)}</p>`;
+                } 
+                // 2b. Impossível passar?
+                else if (mediaPotencial < PASSING_GRADE) {
+                    notasNecessariasDiv.innerHTML = '<br><p class="reprovado-msg" style="font-weight: bold;">Com as notas atuais, não é possível atingir média 7.</p>';
+                    notasNecessariasDiv.innerHTML += `<p id="detalhamento-notas" style="font-size: 0.85em; color: #666; margin-top: 8px; border-top: 1px solid #eee; padding-top: 5px;">${gerarDetalhamento(p1, p2, p3)}</p>`;
+                } 
+                // 2c. Calcula o que falta
+                else {
+                    let htmlOutput = '';
+                    
+                    // Box de Parciais
+                    if (p1 !== null) htmlOutput += `<div class="partial-grade-info" style="margin-bottom: 5px;"><strong>--- P1 Fechada: </strong>${fmt(p1)}</div>`;
+                    else if (currP1 > 0) htmlOutput += `<div class="partial-grade-info" style="margin-bottom: 5px;"><strong>--- P1 Parcial:  </strong>${fmt(currP1)}</div>`;
+
+                    if (p2 !== null) htmlOutput += `<div class="partial-grade-info" style="margin-bottom: 5px;"><strong>--- P2 Fechada: </strong>${fmt(p2)}</div>`;
+                    else if (currP2 > 0) htmlOutput += `<div class="partial-grade-info" style="margin-bottom: 5px;"><strong>--- P2 Parcial: </strong>${fmt(currP2)}</div>`;
+                    
+                    if (p3 !== null) htmlOutput += `<div class="partial-grade-info" style="margin-bottom: 5px;"><strong>--- P3 Fechada: </strong>${fmt(p3)}</div>`;
+                    else if (currP3 > 0) htmlOutput += `<div class="partial-grade-info" style="margin-bottom: 5px;"><strong>--- P3 Parcial: </strong>${fmt(currP3)}</div>`;
+
+                    htmlOutput += '<br><h4 style="margin-bottom: 7px">Notas necessárias para média 7:</h4><br><ul>';
+
+                    const p1Comps = [
+                        {n:'Avaliação Escrita I', m:6.0, v:p1Escrita1},
+                        {n:'50% da Avaliação Prática', m:4.0, v:p1Pratica}
+                    ];
+                    const p2Comps = [
+                        {n:'Avaliação Escrita II', m:4.0, v:p2Escrita2},
+                        {n:'50% da Avaliação Prática', m:4.0, v:p2Pratica},
+                        {n:'Apresentação de Seminário', m:2.0, v:p2Seminario}
+                    ];
+
+                    let missingCount = (p1 === null ? 1 : 0) + (p2 === null ? 1 : 0) + (p3 === null ? 1 : 0);
+
+                    // Se falta apenas P1
+                    if (p1 === null && missingCount === 1) {
+                        let neededP1 = (70.0 - (p2 * 4.5 + p3 * 1.0)) / 4.5;
+                        htmlOutput += `<li style="list-style-type: none; margin-bottom: 5px"><strong>--- Para P1 fechar com ${fmt(neededP1)} ---</strong></li>`;
+                        const res = calculateMissingForPx(neededP1, p1Comps);
+                        htmlOutput += res ? res : '<li>Impossível atingir.</li>';
+                    }
+                    // Se falta apenas P2
+                    else if (p2 === null && missingCount === 1) {
+                        let neededP2 = (70.0 - (p1 * 4.5 + p3 * 1.0)) / 4.5;
+                        htmlOutput += `<li style="list-style-type: none; margin-bottom: 5px"><strong>--- Para P2 fechar com ${fmt(neededP2)} ---</strong></li>`;
+                        const res = calculateMissingForPx(neededP2, p2Comps);
+                        htmlOutput += res ? res : '<li>Impossível atingir com os componentes restantes.</li>';
+                    }
+                    // Se falta apenas P3
+                    else if (p3 === null && missingCount === 1) {
+                        let neededP3 = (70.0 - (p1 * 4.5 + p2 * 4.5)) / 1.0;
+                        htmlOutput += `<li style="list-style-type: none; margin-bottom: 5px"><strong>--- Para P3 fechar com ${fmt(neededP3)} ---</strong></li>`;
+                        const res = calculateMissingForP3(neededP3, p3Promed, p3Sai);
+                        htmlOutput += res ? res : '<li>Impossível atingir com os componentes restantes.</li>';
+                    }
+                    // Se faltam várias, miramos 7.0 para cada uma delas para manter a média equilibrada
+                    else {
+                        if (p1 === null) {
+                            htmlOutput += `<li style="list-style-type: none; margin-bottom: 5px";"><strong>--- Para P1 atingir 7.00 ---</strong></li>`;
+                            const res = calculateMissingForPx(7, p1Comps);
+                            htmlOutput += res ? res : '<br><li>Impossível.</li>';
+                            htmlOutput += `<br>`;
+                        }
+                        if (p2 === null) {
+                            htmlOutput += `<li style="list-style-type: none; margin-bottom: 5px"><strong>--- Para P2 atingir 7.00 ---</strong></li>`;
+                            const res = calculateMissingForPx(7, p2Comps);
+                            htmlOutput += res ? res : '<br><li>Impossível.</li>';
+                            htmlOutput += `<br>`;
+                        }
+                        if (p3 === null) {
+                            htmlOutput += `<li style="list-style-type: none; margin-bottom: 5px"><strong>--- Para P3 atingir 7.00 ---</strong></li>`;
+                            const res = calculateMissingForP3(7, p3Promed, p3Sai);
+                            htmlOutput += res ? res : '<br><li>Impossível.</li>';
+                        }
+                    }
+                    
+                    htmlOutput += '</ul>';
+                    notasNecessariasDiv.innerHTML = htmlOutput;
+                }
+            }
+            resultadoDiv.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

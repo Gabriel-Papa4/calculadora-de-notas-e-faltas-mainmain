@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Faltas - 8º Período</title>
+    <link rel="stylesheet" href="css/style-med63.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="img/controle-de-faltas-med63.png" alt="Logo do Site" id="logo-principal">
+        </div>
+    </header>
+
+    <main class="container">
+        <br>
+        <a href="med63-hub.html" class="voltar">
+            <img src="img/voltar-para-o-portal-med63.png"  alt="Logo do Site" id="logo-voltar">
+        </a>
+
+        <div class="controle-faltas-container">
+            <br>
+            <div class="falta-disciplina-card">
+                <h4 class="texto-falta-sombra">CLÍNICA MÉDICA II</h4>
+                <br>
+                <div class="falta-input-area">
+                    <div class="input-group-faltas">
+                        <label for="faltas-cm2-input">Digite seu número de faltas:</label>
+                        <input type="number" id="faltas-cm2-input" min="0">
+                        <button class="btn-calcular-falta" data-disciplina-ref="cm2">Calcular</button>
+                    </div>
+                    <div class="faltas-pode-ter">
+                        <div>
+                            <span class="texto-fino">Ainda pode ter: </span>
+                            <span id="faltas-cm2-geral" class="valor-faltas"></span>
+                        </div>
+                        <div id="faltas-cm2-prouni-container" style="display: none;">
+                            <span id="faltas-cm2-prouni" class="obs-prouni"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="falta-disciplina-card">
+                <h4 class="texto-falta-sombra">CLÍNICA CIRÚRGICA</h4>
+                <br>
+                <div class="falta-input-area">
+                    <div class="input-group-faltas">
+                        <label for="faltas-cc-input">Digite seu número de faltas:</label>
+                        <input type="number" id="faltas-cc-input" min="0">
+                        <button class="btn-calcular-falta" data-disciplina-ref="cc">Calcular</button>
+                    </div>
+                    <div class="faltas-pode-ter">
+                        <div>
+                            <span class="texto-fino">Ainda pode ter: </span>
+                            <span id="faltas-cc-geral" class="valor-faltas"></span>
+                        </div>
+                        <div id="faltas-cc-prouni-container" style="display: none;">
+                            <span id="faltas-cc-prouni" class="obs-prouni"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="falta-disciplina-card">
+                <h4 class="texto-falta-sombra">SAÚDE MENTAL III</h4>
+                <br>
+                <div class="falta-input-area">
+                    <div class="input-group-faltas">
+                        <label for="faltas-sm3-input">Digite seu número de faltas:</label>
+                        <input type="number" id="faltas-sm3-input" min="0">
+                        <button class="btn-calcular-falta" data-disciplina-ref="sm3">Calcular</button>
+                    </div>
+                    <div class="faltas-pode-ter">
+                        <div>
+                            <span class="texto-fino">Ainda pode ter: </span>
+                            <span id="faltas-sm3-geral" class="valor-faltas"></span>
+                        </div>
+                        <div id="faltas-sm3-prouni-container" style="display: none;">
+                            <span id="faltas-sm3-prouni" class="obs-prouni"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="falta-disciplina-card">
+                <h4 class="texto-falta-sombra">URGÊNCIA E EMERGÊNCIA</h4>
+                <br>
+                <div class="falta-input-area">
+                    <div class="input-group-faltas">
+                        <label for="faltas-ue-input">Digite seu número de faltas:</label>
+                        <input type="number" id="faltas-ue-input" min="0">
+                        <button class="btn-calcular-falta" data-disciplina-ref="ue">Calcular</button>
+                    </div>
+                    <div class="faltas-pode-ter">
+                        <div>
+                            <span class="texto-fino">Ainda pode ter: </span>
+                            <span id="faltas-ue-geral" class="valor-faltas"></span>
+                        </div>
+                        <div id="faltas-ue-prouni-container" style="display: none;">
+                            <span id="faltas-ue-prouni" class="obs-prouni"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+            <div>
+                <h4 class="texto-falta-sombra">EXPLICAÇÃO:</h4><br>
+            <h5 class="texto-falta-sombra">CLÍNICA MÉDICA II</h5>            
+            332h totais<br>
+            1 falta = -0.3475%<br>
+            <br>
+            <h5 class="texto-falta-sombra">CLÍNICA CIRÚRGICA</h5>            
+            216h totais<br>
+            1 falta = -0.3475%<br>
+            <br>
+            <h5 class="texto-falta-sombra">SAÚDE MENTAL III</h5>            
+            72h totais<br>
+            1 falta = -0.3475%<br>
+            <br>
+            <h5 class="texto-falta-sombra">URGÊNCIA E EMERGÊNCIA</h5>            
+            72h totais<br>
+            1 falta = -0.3475%<br>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Autoria de Gabriel Papa</p>
+        </div>
+    </footer>
+
+    <script src="js/controle-faltas-8periodo.js"></script>
+</body>
+</html>
